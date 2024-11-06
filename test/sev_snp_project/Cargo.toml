@@ -1,0 +1,10 @@
+[package]
+name = "sev_snp_project"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hex = "0.4.3"
+openssl = "0.10.68"
+reqwest = {version = "0.12.9", features = ["blocking"]}
+sev = { version = "4.0.0", default-features = false, features = ["snp", "openssl"] }
